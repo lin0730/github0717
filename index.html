@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我和我的家庭</title>
+    <style type="text/css">
+                *{
+           margin: 0;
+           padding: 0;
+           list-style: none;
+        } 
+        .main-footer{
+          padding: 150px 0 0;
+          background: linear-gradient(-20deg,#3f5494,#08c7a5);
+      }
+       
+      .main-footer .container{
+          display: flex;
+          width: 1200px;
+          margin: auto;
+      }
+      .footer-item{
+          width: 0;
+          flex-grow: 1;
+          margin: 0 10px;
+      }
+      .footer-item h4{
+          font-size: 24px;
+          color:#fff;
+          border-bottom:1px dotted #fff;
+          margin-bottom: 0.5em;
+          padding-bottom: 0.5em;
+          }
+      .footer-item nav{
+          display: flex;
+          flex-direction: column;
+      }
+      .footer-item nav a{
+          color:#fff;
+          line-height: 1.4em;
+          text-decoration: none;
+          padding: 5px 0;
+      }
+      .footer-item nav a:hover{
+          color:#fa0;
+      }
+      .footer-subs{
+          display: flex;
+          flex-direction: column;
+      }
+      .footer-subs form{
+         display: flex;
+         width: 100%;
+         margin:auto 0px;
+      }
+      .footer-subs input[type="text"],
+      .footer-subs input[type="submit"]{
+          border:none;
+          padding: 5px 10px;
+      }
+
+      .footer-subs input[type="text"]{
+          width: 0;
+          flex-grow: 1;
+      }
+      .footer-subs input[type="submit"]{
+          color:#fff;
+          background-color: #70f6df;
+      }
+      .copyright{
+          width: 100%;
+          text-align: center;
+          margin: 150px 0 0;
+          padding: 10px 0;
+          background-color: #000;
+          color:#ccc;
+
+      }
+    </style>
+</head>
+<body>
+
+
+
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .main-header{
+          background: linear-gradient(0deg,#fe70d8,#3713c1);
+        }
+        .main-header .container{
+            display: flex;
+            padding: 20px ;
+            max-width: 1200px;
+            margin: auto;
+            align-items: center;
+        }
+        .main-header .logo{width:100px}
+        .main-header .logo img{
+            width:100%
+            /* vertical-align:middle; */
+            }
+        .main-header .main-nav{
+            margin: auto;
+            display: flex;
+        }
+        .main-header .main-nav a{
+            text-decoration: none;
+            color:#fff;
+            padding: 5px; 1em;
+            position: relative;
+            transform: translateY(0px);
+            transition:.3s;
+        }
+        .main-header .main-nav a:hover{
+            transform: translateY(-10px);
+        }
+        .main-header .main-nav a:after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: -5px;
+            height: 0;
+            border-bottom: 1px solid #fff;
+            transition: .5s;
+        }
+        .main-header .main-nav a:hover:after{
+            left: 0;
+            right: 0;
+        }
+        
+        .main-header .header-search{
+            display: flex;
+        }
+        .main-header .header-search button,
+        .main-header .header-search input{
+            border:none;
+            background-color: #fff;
+            padding: 5px 10px;
+   
+        }
+        .main-header .header-search button:focus,
+        .main-header .header-search input:focus{
+            outline:none;
+        }
+        .main-header .header-search button{
+            border-radius: 0 200px 200px 0;
+        }
+        .main-header .header-search input{
+            border-radius: 200px 0 0 200px;
+        }
+   
+       </style>
+
+    <header  class="main-header">
+        <div class="container">
+            <a href="" class="logo">
+                <img src="IMG_1513.jpg" alt="">
+            </a>
+            <nav class="main-nav">
+              <a href="IMG_7124.jpg">小北鼻</a>
+              <a href="IMG_7134.jpg">原生家庭</a>
+              <a href="IMG_7128.jpg">我與父親</a>
+              <a href="IMG_7835.jpg">永懷母親</a>
+            </nav>
+            <form class="header-search">
+                <input type="search" name="" id="">
+                <button><i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+  
+     </header>   
+  
+
+    <style type="text/css">
+   
+         .banner{
+             width:100%;
+             height: 700px;
+             background-color: #ccc; 
+             background: 
+               linear-gradient(115deg, #7bf 50%,
+                 transparent 50%) center center / 100% 100%,
+               url('IMG_8086.jpg')
+                right center / auto 100%;
+         }
+         .container{
+             width: 100%;
+             max-width: 1440px;
+             margin: auto;
+             height: 100%;
+         }
+         .banner-txt{
+             height: 100%;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: flex-start;
+  
+         }
+         .banner-txt h1{
+             font-size: 80px;
+             border-bottom: 1px solid #333;
+             font-weight: 900;
+             padding-bottom: .3em;
+             margin-bottom: .3em;
+         }
+         .banner-txt h1 small{
+             display: block;
+             font-size: 53px;
+             font-weight: 700;
+         }
+         .banner-txt h2{
+             font-size: 50px;
+             font-weight: 700;
+         }
+         .banner-txt p{
+             font-size: 20px;
+             font-weight: 300;
+         }
+        
+      </style>
+
+    <div class="banner">
+        <div class="container">
+            <div class="banner-txt">
+                <h1>
+                    大千世界
+                    <small>
+                        微小的塵埃
+                    </small>
+                </h1>
+                <h2>風中花絮</h2>
+                <p>
+                    在人海中浮沈
+                    <br>
+                    潮來潮往莫悲歎
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <style type="text/css">
+
+        /* body{
+            background-color: #000; 
+        }  */
+        .main-title{
+            margin: 100px 100px;
+        }
+        .main-title .container{
+  
+            width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        .main-title .container h1{
+          width: 100%;
+          box-sizing: border-box;
+          font-size: 70px;
+          color: #000;
+          margin-bottom: .5em;
+          display: flex;
+        }
+        .main-title .container h1::before, 
+        .main-title .container h1::after{
+            content: '';
+            display: block;
+            height: 5px;
+            width: 4em;
+            /* width: 6em; */
+            flex-grow: 1;
+            background-color: #aaa;
+            margin: auto;
+        }
+        .main-title .container h1::before{margin-right: .5em;}
+        .main-title .container h1::after{margin-left: .5em;}
+        
+        .main-title .container .txt{
+         
+          flex-shrink: 0;
+          box-sizing: border-box;
+          color:#000;
+        }
+        .main-title .container .txt p{
+            margin-bottom: 1em;
+        }
+       
+      </style>
+
+
+
+    <div class="main-title">
+        <div class="container">
+            <h1>原生家庭</h1>
+            <div class="txt">
+                <p>父親是公務員，母親是家庭主婦，兄弟姐妹共6人。</p>
+                <p>從小在嘉義林區管理處的宿舍長大，直到民國97年才遷出，在舊宿區共居住了近50年。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+        @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+
+       .fish{
+           display: flex;
+           width: 1200px;
+           margin: 100px auto;
+           /* background-color: #999; */
+           padding-top: 75px;
+       }
+       .fish .item{
+           width: 370px;
+           margin: 15px;
+           text-align: center;
+           border: 10px solid #f9cec2;
+           background-color: #fff;
+           border-radius: 20px;
+           box-shadow: 10px 20px 50px #f7b6a7;
+       }
+       .fish .item h3{color:#f5afac;}
+       
+       .fish .item p{color:#ccc;}
+       .fish .item .icon{
+           width: 150px;
+           height: 150px;
+           background-color: #fff;
+           margin: -75px auto 0;
+           font-size: 85px;
+           line-height: 150px;
+           border-radius: 50%;
+           color:#f5afac;
+           position: relative;
+       }
+       .fish .item .icon::before{
+           content: "";
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           border-top: 10px solid #f9cec2;
+           border-right: 10px solid #f9cec2;
+           border-bottom: 10px solid transparent;
+           border-left: 10px solid transparent;
+           left: -10px;
+           top: -10px;
+           border-radius: 50%;
+           transform: rotate(-45deg);
+       }
+       .fish .item:hover .fa{
+           animation: ss .2s linear infinite alternate;
+       }
+       .fish .item .txt{
+           padding: 20px 20px 2em;
+       }
+       @keyframes ss{
+           0%{transform: rotate(-10deg);}
+           100%{transform: rotate(10deg);}
+       }
+     </style>
+
+
+
+
+    <div class="fish">
+        <div class="item">
+            <div class="icon">
+                <i class="fa fa-gavel"></i>
+            </div>
+            <div class="txt">
+                <h3>奮鬥期</h3>
+                <p>求學期間努力用功，雖然努力但是成效不佳，大概是順從父親的意思，太早離開家了吧！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class="fa fa-thumbs-up"></i>
+            </div>
+            <div class="txt">
+                <h3>成就期</h3>
+                <p>開始工作後，專心打拼工作及事業，雖然事業小小有成，但是卻因為太過努力工作，而疏於照顧家庭。</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class="fa fa-bell"></i>
+            </div>
+            <div class="txt">
+                <h3>晨鐘期</h3>
+                <p>一切紛紛擾擾都過了之後，慢慢體會為人要學習大鐘一樣沈穩，不要如小鈴一般毛噪，沈默是金呀！</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-title">
+        <div class="container">
+            <h1>我的家庭(一)</h1>
+            <div class="txt">
+                <p>媽媽家原來是個大家庭，有十一個兄弟姐妹，但是日據時代因虐疾之亂，全家僅剩兩人，因此飽受孤單，特愛小孩。</p>
+                <p>父親自幼失怙，飽受後母不公平對待，因此勤奮向學，一路與日本小孩競爭，取得相當的優勢，日後在嘉義林管處服務至退休。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <style type="text/css">
+        
+        .studen-msg{
+            display: flex;
+            align-items: center;
+        }
+        .studen-msg .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+        .studen-msg .item{
+            width: 368px;
+            margin: 0 15px;
+            display: flex;
+            background-color: rgba(255,255,255,.6)
+            border: 1px solid #888;
+            box-shadow: 0 10px 30px rgba(0,0,0,.3);
+            /* font-family: 'Noto San TC',sans-serif;  */
+        }
+        .studen-msg .item .pic{
+            width: 50%;
+        }
+        .studen-msg .item .pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .studen-msg .item .txt{
+           width: 50%;
+           padding: 20px;
+           box-sizing: border-box;
+           display: flex;
+           flex-direction: column;
+           /* justify-content: center; */
+        }
+        .studen-msg .item .txt h2{
+            font-weight: 700;
+            margin-bottom: .4em;
+        }
+        .studen-msg .item .txt p{
+            font-weight: 300;
+        }
+        .studen-msg .item .txt .btn{
+            line-height: 1.5em;
+            border: 1px solid #ccc;
+            padding: 0 1em;
+            align-self: flex-end;
+            text-decoration: none;
+            border-radius: 200px;
+            margin-top:auto ;
+            color: #aaa;
+        }
+        .studen-msg .item .txt .btn:hover{
+            background-color: #ccc;
+            color:#fff;
+        }
+  
+      
+      </style>
+
+
+    <div class="studen-msg">
+        <div class="container">
+            <div class="item">
+                <div class="pic">
+                    <img src="IMG_8077.jpg">
+                </div>
+                <div class="txt">
+                    <h2>小時候全家福</h2>
+                    <p>純樸和樂的一家人</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pic">
+                    <img src="IMG_8075.jpg">
+                </div>
+                <div class="txt">
+                    <h2>大姐結婚的全家福</h2>
+                    <p>雖不是豪華的婚禮，卻受到大家的祝福</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pic">
+                    <img src="IMG_8085.jpg">
+                </div>
+                <div class="txt">
+                    <h2>成年後的全家福</h2>
+                    <p>有人事業有成，卻沒了兒時的純真了！</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+            
+         
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="main-title">
+        <div class="container">
+            <h1>我與毛小孩</h1>
+            <div class="txt">
+                <p>兒時機緣，小時候就有養了一條狗，但是八個月就因誤食老鼠藥，無緣！</p>
+                <p>退休以後，因緣際會也養了一個狗，能夠陪伴我們度過可怕的疫情，希望未來平平順順！</p>
+            </div>
+        </div>
+    </div>
+
+
+    <style type="text/css">
+        
+        .force{
+            width: 1200px;
+            display: flex;
+            margin: auto;
+        }
+        .force .item{
+            width: 368px;
+            margin: 15px;
+            text-align: center;
+            background-color: #fff;
+            border:1px solid #ccc;
+            transform: translate(0px);
+            transition: .5s;
+            box-sizing: border-box;
+        }
+        .force .item img{
+            width: 100%;
+            vertical-align: middle;
+            
+        }
+        .force .item h2{
+            border-bottom: 1px solid #888;
+            padding-bottom: .3em;
+            margin-bottom: .4em;
+            transition: .25s;
+    
+        }
+        .force .item p{
+            line-height: 1.6;
+            font-weight: 300;
+            transition: .25s;
+        }
+        .force .item .txt{
+            padding: 20px;
+            position: relative;
+        }
+        .force .item .txt:before{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 0;
+            top:0;
+            border-top: 50px solid transparent;
+            border-left: 184px solid #fff;
+            border-right: 184px solid #fff;
+            transform: translateY(-100%);
+        }
+        .force .item:hover{
+            transform: translateY(-50px);
+        }
+        .force .item:hover .txt{
+            background-image: linear-gradient(0deg,#FB8076,#FEB85D);
+        }
+        .force .item:hover .txt:before{
+            border-left: 184px solid #FEB85D;
+            border-right: 184px solid #FEB85D; 
+        }
+        .force .item:hover h2{
+            color:#fff;
+            border-bottom-color:#fff ;
+        }
+        .force .item:hover p{
+            color:#fff;
+        }
+    
+        </style>
+
+
+
+
+
+
+
+
+    <div class="force">
+        <div class="item">
+          <img src="IMG_7132.jpg">
+          <div class="txt">
+              <h2>小林</h2>
+              <p>戴著打鳥帽仔，背著背包，蓄勢待發！</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="IMG_7127.jpg">
+          <div class="txt">
+              <h2>小林與狗</h2>
+              <p>小林與小狐狸
+                  小時候與這隻狗
+                  只有淺淺的緣，有人說狐狸最有靈性了，
+                  在無人的山中如果修行久了，是有可能幻化為人形的哦！
+                  真是一隻可愛的小狐狸
+
+              </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="IMG_8720.jpg">
+          <div class="txt">
+              <h2>大林與狗</h2>
+              <p>大林與小梅西，
+                  這是一隻柴犬，但是長得卻像一隻狐狸，
+                  也許是50年後，又來找老朋友吧！
+              </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    <div class="main-title">
+        <div class="container">
+            <h1>我的家庭(二)</h1>
+            <div class="txt">
+                <p>二十八歲結婚，育有兩子，老大是女兒，老二是兒子，都已長成俊男美女，日後必是社會棟樑。
+                </p>
+                <p>甘苦點滴，都已是過往雲煙，往日回憶，僅剩一本本斑駁相片，訴說著歲月的故事。</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <style type="text/css">
+      
+        .general-card{
+            display: flex;
+            align-items: center;
+        }
+        .general-card .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+        .general-card .item{
+            width: 368px;
+            margin: 30px 15px;
+            display: flex;
+            background-color: rgba(255,255,255,.6)
+            border: 1px solid #888;
+            box-shadow: 0 10px 30px rgba(160,0,0,.5);
+            /* font-family: 'Noto San TC',sans-serif;  */
+        }
+        .general-card .item .pic{
+            width: 50%;
+        }
+        .general-card .item .pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .general-card .item .txt{
+           width: 50%;
+           padding: 20px;
+           box-sizing: border-box;
+           display: flex;
+           flex-direction: column;
+           /* justify-content: center; */
+        }
+        .general-card .item .txt h2{
+            font-weight: 700;
+            margin-bottom: .4em;
+        }
+        .general-card .item .txt p{
+            font-weight: 300;
+        }
+        .general-card .item .txt .btn{
+            line-height: 1.5em;
+            border: 1px solid #ccc;
+            padding: 0 1em;
+            align-self: flex-end;
+            text-decoration: none;
+            border-radius: 200px;
+            margin-top:auto ;
+            color: #aaa;
+        }
+        .general-card .item .txt .btn:hover{
+            background-color: #ccc;
+            color:#fff;
+        }
+  
+      
+      </style>
+
+
+
+
+    <div class="general-card">
+        <div class="container">
+            <div class="item">
+                <div class="pic">
+                    <img src="IMG_9110.jpg">
+                </div>
+                <div class="txt">
+                    <h2>第一次出國</h2>
+                    <p>背後白菜岩石，在南亞大海嘯中被推倒，再不見英姿煥發的奇石了！</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pic">
+                    <img src="IMG_9112.jpg">
+                </div>
+                <div class="txt">
+                    <h2>德國之旅</h2>
+                    <p>一直以來，歐洲就是又美又遙遠的地方，有機會不妨親自去看看哦！</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pic">
+                    <img src="IMG_9111.jpg">
+                </div>
+                <div class="txt">
+                    <h2>勝利廣場</h2>
+                    <p>追求勝利是歷代英雄的夢想，但想想，在勝利的背後要付出多少代價呢？</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+            
+         
+        </div>
+    </div>
+
+
+    <div class="main-footer">
+        <div class="container">
+            <div class="footer-item">
+                <h4>我的家庭(一)</h4>
+                <nav>
+                    <a href="">one-one</a>
+                    <a href="">one-two</a>
+                    <a href="">one-three</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <h4>我與毛小孩</h4>
+                <nav>
+                    <a href="">o-one</a>
+                    <a href="">o-two</a>
+                    <a href="">o-three</a>
+                    <a href="">o-four</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <h4>我的家庭(二)</h4>
+                <nav>
+                    <a href="">two-one</a>
+                    <a href="">two-two</a>
+                    <a href="">two-three</a>
+                    <a href="">two-four</a>
+                </nav>
+            </div>
+            <div class="footer-item footer-subs">
+                <h4>訂閱電子報</h4>
+                <form action="">
+                    <input type="text">
+                    <input type="submit" value="訂閱">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy;2019
+        </div>
+
+    </div>
+
+
+</body>
+</html>
